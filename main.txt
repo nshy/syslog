@@ -1,0 +1,7 @@
+14 April 2016
+
+Archlinux system upgrage goes wrong. Fonts in xterm became unpleasant (i use
+dejavu sans mono). The reason turned out to be the fontconfig preset changes
+(/etc/fonts/conf.d). Solution: downgrade from 2.11.95-1 to 2.11.1-2. I have no
+time to find out what of misc changes in presets is the cause.
+
