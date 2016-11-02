@@ -4,3 +4,18 @@ Archlinux system upgrage goes wrong. Fonts in xterm became unpleasant (i use
 dejavu sans mono). The reason turned out to be the fontconfig preset changes
 (/etc/fonts/conf.d). Solution: unlink '10-hinting-slight.conf'
 
+2 November 2016
+
+After switching colemak to qwerty and back via setxkbmap
+my "Menu" key lost its Mod4 ability. Next command will
+restore it back:
+
+ > xmodmap -e "keycode  135 = Super_R"
+
+By the way next commands switch between colemak and
+qwerty configs (with my default X11 keyboard config).
+
+1. switch to qwerty
+ > setxkbmap -variant ","
+2. switch back to colemak
+ > setxkbmap -variant "colemak,"
