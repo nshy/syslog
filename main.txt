@@ -19,3 +19,10 @@ qwerty configs (with my default X11 keyboard config).
  > setxkbmap -variant ","
 2. switch back to colemak
  > setxkbmap -variant "colemak,"
+
+17 April 2017
+
+A receipt to unzip a file with cyrillic names:
+
+1. unzip in some clean dir, move to that dir
+convmv -rf cp1252 -t cp850 --notest * && convmv -rf cp866 -t utf-8 --notest *
